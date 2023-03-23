@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Mode/Light Mode Theme</title>
+    <link rel="stylesheet" href="darklight.css">
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+      <button id="theme-toggle">Darklight</button>
+    </header>
+    <main>
+      <p>This is the main content of my website.</p>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+    <script >
+    const body = document.querySelector('body');
+        const button = document.querySelector('#theme-toggle');
+        
+        button.addEventListener('click', function() {
+          body.classList.toggle('dark');
+        });
+        </script>
+  </body>
+</html>
